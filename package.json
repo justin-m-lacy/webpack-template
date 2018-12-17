@@ -1,0 +1,24 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "Template for using webpack with separate dev and config files.",
+  "main": "index.js",
+  "scripts": {
+	"dev": "webpack --watch --config webpack.dev.config.mjs",
+    "build": "webpack --watch --config webpack.dist.config.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lerpinglemur/webpack-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lerpinglemur/webpack-template/issues"
+  },
+  "homepage": "https://github.com/lerpinglemur/webpack-template#readme",
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
