@@ -4,8 +4,8 @@
   "description": "Template for using webpack with separate dev and config files.",
   "main": "index.js",
   "scripts": {
-	"dev": "webpack --watch --config webpack.dev.config.mjs",
-    "build": "webpack --watch --config webpack.dist.config.mjs"
+    "dev": "webpack --watch --env --buildpath=dev/",
+    "build": "webpack --watch --env.production --buildpath=dist/"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/lerpinglemur/webpack-template#readme",
   "devDependencies": {
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "copy-webpack-plugin": "^5.1.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
   }
 }
