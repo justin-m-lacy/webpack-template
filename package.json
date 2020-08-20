@@ -1,7 +1,7 @@
 {
   "name": "webpack-template",
   "version": "1.0.0",
-  "type":"modules",
+  "type": "modules",
   "description": "Template for using webpack with separate dev and config files.",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/lerpinglemur/webpack-template#readme",
   "devDependencies": {
     "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9"
   }

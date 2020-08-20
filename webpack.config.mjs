@@ -44,19 +44,25 @@ module.exports = (env, argv)=> {
 		__DIST:env.production ? true : false,
 		__SAVE:null
 	}),
+	new HtmlWebpackPlugin({
+
+		template:'index.ejs',
+		title:"Vue-template",
+		filename:path.resolve( buildPath, 'index.html'),
+		__DIST:env.production ? true : false
+
+	}),
 	new CopyPlugin({
 		patterns:[
 
 		{
-			from:'index.html',
-			to:absPath
-		},
-		{
 			from:'data',
+			noErrorOnMissing:true,
 			to:path.resolve( absPath, 'data')
 		},
 		{
 			from:'css',
+			noErrorOnMissing:true,
 			to:path.resolve( absPath, 'css' )
 		}
 	]})
