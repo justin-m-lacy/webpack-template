@@ -44,7 +44,8 @@ module.exports = (env, argv)=> {
 		__DIST:env.production ? true : false,
 		__SAVE:null
 	}),
-	new CopyPlugin([
+	new CopyPlugin({
+		patterns:[
 
 		{
 			from:'index.html',
@@ -58,7 +59,7 @@ module.exports = (env, argv)=> {
 			from:'css',
 			to:path.resolve( absPath, 'css' )
 		}
-	])
+	]})
 	],
 	output:{
 
