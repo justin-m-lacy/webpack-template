@@ -6,7 +6,7 @@ const webpack = require('webpack');
 //const VueLoader = require('vue-loader/lib/plugin');
 //var VERS_STR = execSync('git rev-list HEAD --count').toString()
 
-module.exports = (enc, argv)=> {
+module.exports = (env, argv)=> {
 
 	// intended buildpath from script.
 	const buildpath = argv['buildpath'];
