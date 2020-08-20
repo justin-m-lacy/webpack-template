@@ -71,7 +71,7 @@ module.exports = (env, argv)=> {
 
 		filename: "[name].js",
 		chunkFilename: "[name].bundle.js",
-		path:path.resolve(__dirname, buildpath, 'js/' ),
+		path:path.resolve(absPath, 'js/' ),
 		publicPath:'js/',
 		library: "[name]"
 	},
