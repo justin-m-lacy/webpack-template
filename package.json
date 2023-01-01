@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/lerpinglemur/webpack-template#readme",
   "devDependencies": {
-    "copy-webpack-plugin": "^5.1.1",
-    "html-webpack-plugin": "^4.3.0",
-    "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
